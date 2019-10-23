@@ -1,10 +1,6 @@
 import { ADD_CHARACTER } from '../actions';
-import characters_json from '../data/characters.json';
+import { createCharacter } from './helpers';
 
-function createCharacter(id) {
-  let character = characters_json.find(c => c.id === id);
-  return character;
-}
 function heroes(state = [], action) {
   switch (action.type) {
     case ADD_CHARACTER:
