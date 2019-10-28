@@ -31,10 +31,10 @@ function mapsStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {};
+  return bindActionCreators({ addCharacterById }, dispatch);
 }
 
 export default connect(
   mapsStateToProps,
-  null
+  mapDispatchToProps
 )(CharacterList);
