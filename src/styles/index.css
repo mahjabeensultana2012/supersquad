@@ -2,3 +2,7 @@
   text-align: center;
   padding: 5%;
 }
+
+.right-button {
+  cursor: pointer;
+}
