@@ -33,11 +33,11 @@ function mapsStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ addCharacterById }, dispatch);
-}
+// function mapDispatchToProps(dispatch) {
+//   return bindActionCreators({ addCharacterById }, dispatch);
+// }
 
 export default connect(
   mapsStateToProps,
-  mapDispatchToProps
+  { addCharacterById }
 )(CharacterList);
