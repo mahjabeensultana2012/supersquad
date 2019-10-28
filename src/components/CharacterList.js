@@ -13,7 +13,9 @@ class CharacterList extends Component {
 
 function mapsStateToProps(state) {
   console.log('state', state);
-  return {};
+  return {
+    characters: state.characters,
+  };
 }
 
 export default connect(
