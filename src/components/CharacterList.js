@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { addCharacterById } from '../actions';
 
 class CharacterList extends Component {
   render() {
@@ -26,6 +28,10 @@ function mapsStateToProps(state) {
   return {
     characters: state.characters,
   };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {};
 }
 
 export default connect(
