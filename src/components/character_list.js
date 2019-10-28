@@ -11,4 +11,12 @@ class CharacterList extends Component {
   }
 }
 
-export default CharacterList;
+function mapsStateToProps(state) {
+  console.log('state', state);
+  return {};
+}
+
+export default connect(
+  mapsStateToProps,
+  null
+)(CharacterList);
