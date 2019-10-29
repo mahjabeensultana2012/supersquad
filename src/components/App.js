@@ -11,7 +11,9 @@ class App extends Component {
         <div className="col-md-6">
           <CharacterList />
         </div>
-        <HeroList />
+        <div className="col-md-6">
+          <HeroList />
+        </div>
       </div>
     );
   }
