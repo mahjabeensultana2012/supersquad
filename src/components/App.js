@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <h2>SuperSquad</h2>
-        <CharacterList />
+        <div className="col-md-6">
+          <CharacterList />
+        </div>
         <HeroList />
       </div>
     );
