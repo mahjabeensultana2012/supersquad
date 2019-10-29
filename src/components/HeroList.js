@@ -6,7 +6,7 @@ class HeroList extends Component {
     return (
       <div>
         <h4>Your Hero Squad</h4>
-        <ul>
+        <ul className="list-group">
           {this.props.heroes.map(hero => {
             return (
               <li key={hero.id} className="list-group-item">
@@ -19,3 +19,14 @@ class HeroList extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    heroes: state.heroes,
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(HeroList);
