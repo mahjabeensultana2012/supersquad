@@ -7,8 +7,8 @@ function heroes(state = [], action) {
       let heroes = [...state, createCharacter(action.id)];
       return heroes;
     case REMOVE_CHARACTER:
-      heroes = state.filter(item => item.id !== action.id);
-      return heroes;
+      let rheroes = state.filter(item => item.id !== action.id);
+      return rheroes;
     default:
       return state;
   }

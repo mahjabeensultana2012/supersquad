@@ -14,7 +14,7 @@ class HeroList extends Component {
                 <div className="list-item">{hero.name}</div>
                 <div
                   className="list-item right-button"
-                  onclick={() => this.props.removeCharacterById(hero.id)}
+                  onClick={() => this.props.removeCharacterById(hero.id)}
                 >
                   X
                 </div>
