@@ -8,14 +8,31 @@ class SquadStats extends Component {
     return strength;
   }
 
+  intelligence() {
+    let intelligence = 0;
+    this.props.heroes.forEach(hero => (intelligence += hero.intelligence));
+    return intelligence;
+  }
+
+  speed() {
+    let speed = 0;
+    this.props.heroes.forEach(hero => (speed += hero.speed));
+    return speed;
+  }
+
   render() {
     return (
       <div>
         <h4>Squad Stats</h4>
         <ul className="list-group">
-          <li className="list-group-item"></li>
-          <b>Overall Strength:</b>
-          {this.strength()}
+          <li className="list-group-item">
+            <b>Overall Strength:</b>
+            {this.strength()}
+          </li>
+          <li className="list-group-item">
+            <b>Overall intelligence:</b>
+            {this.intelligence()}
+          </li>
         </ul>
       </div>
     );
