@@ -8,7 +8,7 @@ function heroes(state = [], action) {
       return heroes;
     case REMOVE_CHARACTER:
       heroes = state.filter(item => item.id !== action.id);
-      returnheroes;
+      return heroes;
     default:
       return state;
   }
