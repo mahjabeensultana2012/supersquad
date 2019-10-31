@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class SquadStats extends Component {
-  strenth() {
-    let Strength = 0;
-    this.props.heroes.forEach(hero => (Strength += hero.strenth));
-    return strenth;
+  strength() {
+    let strength = 0;
+    this.props.heroes.forEach(hero => (strength += hero.strength));
+    return strength;
   }
   render() {
     return (
