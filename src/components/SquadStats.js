@@ -7,6 +7,7 @@ class SquadStats extends Component {
     this.props.heroes.forEach(hero => (strength += hero.strength));
     return strength;
   }
+
   render() {
     return (
       <div>
@@ -14,6 +15,7 @@ class SquadStats extends Component {
         <ul className="list-group">
           <li className="list-group-item"></li>
           <b>Overall Strength:</b>
+          {this.strength()}
         </ul>
       </div>
     );
@@ -21,6 +23,7 @@ class SquadStats extends Component {
 }
 
 function mapStateToProps(state) {
+  console.log('AAAA:', state);
   return {
     heroes: state.heroes,
   };
