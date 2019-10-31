@@ -5,7 +5,11 @@ class SquadStats extends Component {
   render() {
     return (
       <div>
-        <h4>Squad</h4>
+        <h4>Squad Stats</h4>
+        <ul className="list-group">
+          <li className="list-group-item"></li>
+          <b>Overall Strength:</b>
+        </ul>
       </div>
     );
   }
