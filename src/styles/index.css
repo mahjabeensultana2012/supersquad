@@ -1,9 +1,10 @@
 body {
-  background-image: url('../assets/image.jpeg');
+  /* background-image: url('../assets/image.jpeg'); */
+  background-color: gray;
   height: 100%;
   background-size: cover;
   background-repeat: none;
-  opacity: 15;
+  opacity: 0.8;
 }
 
 .App {
